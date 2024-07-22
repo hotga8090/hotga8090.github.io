@@ -350,4 +350,29 @@ h1, h2, h3, p, label {
         padding: 10px 20px;
         font-size: 0.9em;
     }
+
+    /* Añade animaciones para testimonios */
+.testimonial {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.testimonial.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Añade animaciones para los planes */
+.plan {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.plan.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 }
